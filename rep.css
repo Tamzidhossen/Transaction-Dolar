@@ -1,0 +1,185 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+:root{
+    --box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: underline solid #393E46 3px;
+    font-size: 24px;
+}
+
+.outer-wrap{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #55B4B0;
+    padding: 30px;
+}
+
+.inner-wrap{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.heading{
+    margin: 30px auto;
+    padding: 0px 20px;
+}
+
+.heading .title{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+}
+
+.heading .subtitle{
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+}
+
+.transaction-control{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px auto;
+}
+
+.actions,.stats{
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+.actions .add{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.actions .add input{
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.actions .add input[type="submit"]{
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #2666CF;
+    color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.stats p{
+    background-color: #bed7ff;
+    margin: 20px 10px;
+    padding: 10px 20px;
+    box-shadow: var(--box-shadow);
+    font-size: 18px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.stats p.balance{
+    background-color: #fff2dd92;
+    border-right: 10px solid #f6C065;
+}
+
+.stats p.income{
+    background-color: #e7fff1ad;
+    border-right: 10px solid #16c77a;
+}
+
+.stats p.expense{
+    background-color: #fff2dd92;
+    border-right: 10px solid #eb596e;
+}
+
+.stats p span{
+    font-size: 18px;
+}
+
+.transaction-history{
+    margin: 40px 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px 0px;
+    box-shadow: var(--box-shadow);
+}
+
+.records{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.records div{
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.records li{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin: 12px 0px;
+    min-width: 250px;
+    box-shadow: var(--box-shadow);
+}
+
+.records .income li{
+    border-left: 10px solid #2ECC71;
+}
+
+.records .expense li{
+    border-left: 10px solid #DF5E5E;
+}
+
+.records li p:first-child{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.records span{
+    font-size: 18px;
+}
+
+.records span#time{
+    color: #717171;
+    font-size: 12px;
+}
+
+.records i.delete{
+    margin-left: 15px;
+    color: #082032;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.records i.delete:hover{
+    color: #842851;
+}
+

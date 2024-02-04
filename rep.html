@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sqrEloquent - Easiest Way To Track Your Transactions!</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <link rel="stylesheet" href="./rep.css">
+</head>
+<body>
+    <main>
+        <div class="outer-wrap">
+            <div class="inner-wrap">
+                <section class="heading">
+                    <p class="title">sqrEloquent</p>
+                    <p class="subtitle">Easiest Way To Track Your Transactions!</p>
+                </section>
+                <section class="transaction-control">
+                    <div class="actions">
+                        <h3>Add Transactions</h3>
+                        <form class="add">
+                            <input type="text" name="source" placeholder="Source" autocomplete="off">
+                            <input type="number" name="amount" placeholder="Amount" autocomplete="off">
+                            <input type="submit" value="Add Transaction">
+                        </form>
+                    </div>
+                    <div class="stats">
+                        <h3>Statistics</h3>
+                        <p class="balance">
+                            Balance: $<span id="balance"></span>
+                        </p>
+                        <p class="income">
+                            Income: $<span id="income"></span>
+                        </p>
+                        <p class="expense">
+                            Expense: $<span id="expense"></span>
+                        </p>
+                    </div>
+                </section>
+                <section class="transaction-history">
+                    <h3>Transaction History</h3>
+                    <div class="records">
+                        <div class="income">
+                            <h3>Income</h3>
+                            <ul class="income-list">
+                            </ul>
+                        </div>
+                        <div class="expense">
+                            <h3>Expense</h3>
+                            <ul class="expense-list">
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="./rep.js"></script>
+</body>
+</html>
